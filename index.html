@@ -17,7 +17,7 @@
       integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
       crossorigin="anonymous"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Venice restoronto</title>
   </head>
   <body>
@@ -43,8 +43,10 @@
       id="showcase"
       class="d-flex flex-column justify-content-center align-items-center text-center text-white"
     >
-      <h1 class="display-3 text-capitalize">venice restoronto</h1>
-      <h3 class="display-3 text-capitalize py-5">welcomes you</h3>
+      <h1 class="display-3 text-capitalize" data-aos="fade-up"
+      data-aos-duration="1600">venice restoronto</h1>
+      <h3 class="display-3 text-capitalize py-5" data-aos="fade-down"
+      data-aos-duration="1500">welcomes you</h3>
     </section>
 
     <section id="about" class="pt-3 text-white">
@@ -53,20 +55,20 @@
         <div class="row">
           <div class="col-xxl-6 col-md-10 col-10 mx-auto">
             <figure class="mt-1">
-              <img src="showcase2.jpg" alt="Our rooms" class="img-fluid" />
+              <img src="showcase2.jpg" alt="Our rooms" class="img-fluid"  data-aos="fade-right"
+              data-aos-duration="1600"/>
             </figure>
           </div>
           <div
             class="col-xxl-6 col-md-10 col-10 mx-auto d-flex flex-column justify-content-center align-items-center"
-          >
+            data-aos="fade-left"
+            data-aos-duration="1500">
             <p class="font-weight-bold putMarginTopOnTabs">
               Perched on a dramatic hillside looking out over the rugged
               coastline and crystal-clear waters of the deep blue Ionian sea,
               this awe-inspiring villa is a haven of tranquillity and privacy to
               share with friends and family.
             </p>
-            
-        
           </div>
         </div>
       </div>
@@ -108,6 +110,7 @@
               5 star ratings
             </h3>
             <svg
+            
               width="3em"
               height="3em"
               viewBox="0 0 16 16"
@@ -126,16 +129,23 @@
     </section>
     <section id="ourrooms" class="pt-3 text-white">
       <h1 class="display-3 text-center text-capitalize">our rooms</h1>
-      <div class="container mt-4">
-        <div class="row">
+      <div class="container mt-4" id="ApplyOverlay">
+        <div class="row" data-aos="fade-up"
+        data-aos-duration="1500">
           <div class="col-xxl-6 col-md-10 col-10 mx-auto">
             <figure class="mt-1">
-              <img src="roomhome.jpg" alt="Our rooms" class="img-fluid" />
+              <img
+                src="roomhome.jpg"
+                title="<h1 style='color:red'>Our Rooms</h1>"
+                alt="Our rooms"
+                class="img-fluid"
+              />
             </figure>
           </div>
           <div
             class="col-xxl-6 col-md-10 col-10 mx-auto d-flex flex-column justify-content-center align-items-center"
-          >
+            data-aos="fade-down"
+            data-aos-duration="1500" >
             <p class="font-weight-bold putMarginTopOnTabs">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga
               quia qui amet eveniet? Laboriosam dignissimos quas in eligendi
@@ -149,11 +159,109 @@
         </div>
       </div>
     </section>
-    <section id="menu">
-      <h1 class="display-3 text-center">menu</h1>
-      
-    </section>
-
+  <section id="pastas" class="pt-3 text-white" >
+    <h1 class="display-3 text-center text-capitalize" data-aos="flip-right"
+    data-aos-duration="1500">our pastas</h1>
+    <div class="container mt-4" data-aos="flip-up"
+    data-aos-duration="1500" id="ApplyOverlayPasta">
+      <div class="row">
+        <div class="col-xxl-6 col-md-10 col-10 mx-auto">
+          <figure class="mt-1">
+            <img
+            data-aos="flip-left"
+            data-aos-duration="1500"
+              src="whitepasta.jpg"
+              title="<h1 style='color:red'>Our Pastas</h1>"
+              alt="Our pastas"
+              class="img-fluid"
+            />
+          </figure>
+        </div>
+        <div
+          class="col-xxl-6 col-md-10 col-10 mx-auto d-flex flex-column justify-content-center align-items-center"
+          data-aos="flip-right"
+    data-aos-duration="1503">
+          <p class="font-weight-bold putMarginTopOnTabs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga
+            quia qui amet eveniet? Laboriosam dignissimos quas in eligendi
+            suscipit nostrum ut molestiae adipisci nobis aut. Rerum, excepturi
+            facilis fuga animi tempora nobis minus facere? Voluptatem, fuga
+            cum dolorem adipisci unde veritatis illum iure tempora. In esse
+            nam ab dolorem neque quidem, a facere fugit blanditiis tempora
+            facilis, ad cum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="pizzas" class="pt-3 text-white" >
+    <h1 class="display-3 text-center text-capitalize"  data-aos="zoom-in"
+    data-aos-duration="1500">our pizzas</h1>
+    <div class="container mt-4" id="ApplyOverlayPizza">
+      <div class="row">
+        <div class="col-xxl-6 col-md-10 col-10 mx-auto">
+          <figure class="mt-1">
+            <img
+            data-aos="zoom-out-up"
+            data-aos-duration="1500"
+              src="papperonipizza.jpg"
+              title="<h1 style='color:red'>Our Pizzas</h1>"
+              alt="Our pizzas"
+              class="img-fluid"
+            />
+          </figure>
+        </div>
+        
+        <div
+          class="col-xxl-6 col-md-10 col-10 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <p class="font-weight-bold putMarginTopOnTabs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga
+            quia qui amet eveniet? Laboriosam dignissimos quas in eligendi
+            suscipit nostrum ut molestiae adipisci nobis aut. Rerum, excepturi
+            facilis fuga animi tempora nobis minus facere? Voluptatem, fuga
+            cum dolorem adipisci unde veritatis illum iure tempora. In esse
+            nam ab dolorem neque quidem, a facere fugit blanditiis tempora
+            facilis, ad cum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="noodles" class="pt-3 text-white" >
+    <h1 class="display-3 text-center text-capitalize">our noodles</h1>
+    <div class="container mt-4" id="ApplyOverlayNoodle">
+      <div class="row">
+        <div class="col-xxl-6 col-md-10 col-10 mx-auto">
+          <figure class="mt-1">
+            <img
+              src="basilnoodles.jpg"
+              title="<h1 style='color:red'>Our Noodles</h1>"
+              alt="Basil Noodles"
+              class="img-fluid"
+            />
+          </figure>
+        </div>
+        
+        <div
+          class="col-xxl-6 col-md-10 col-10 mx-auto d-flex flex-column justify-content-center align-items-center"
+        >
+          <p class="font-weight-bold putMarginTopOnTabs">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fuga
+            quia qui amet eveniet? Laboriosam dignissimos quas in eligendi
+            suscipit nostrum ut molestiae adipisci nobis aut. Rerum, excepturi
+            facilis fuga animi tempora nobis minus facere? Voluptatem, fuga
+            cum dolorem adipisci unde veritatis illum iure tempora. In esse
+            nam ab dolorem neque quidem, a facere fugit blanditiis tempora
+            facilis, ad cum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="location">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3992169.6915765135!2d72.94247140682556!3d12.275108675389912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb3e9c143a8a7%3A0x86eed412c7e53d92!2sVenice%20Bar%20%26%20Restaurant!5e0!3m2!1sen!2sin!4v1593620827706!5m2!1sen!2sin" width="600" height="450"  class="embed-responsive" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</section>
     <!-- Optional JavaScript -->
     <!-- Popper.js first, then Bootstrap JS -->
     <script
@@ -181,7 +289,8 @@
       integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik="
       crossorigin="anonymous"
     ></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="jquery.sliphover.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

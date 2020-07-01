@@ -162,16 +162,36 @@ html{
     background-attachment: fixed;
     
 }
-#about,#ourrooms{
-    background-color:#487eb0;
-   
-    
+#showcasePastas{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(redpasta.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
 }
-#happyclients{
+#pizzashowcase{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url("papperonipizza.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about,#ourrooms,#pastaspagetext,#otherpastas,#pizzaAbout{
+    background-color:#487eb0;    
+}
+#pizzaAbout{
+  height: 80vh;
+  
+}
+
+#happyclients,#pastas,#pizzas,#noodles,#pastaItems{
     background-color:#2C3A47;
-   
-   
 }
+
 
 svg{
     margin-top: 60px!important;
@@ -188,7 +208,9 @@ svg{
 .incrementingNumbers{
     font-size:43px;
 }
-
+.pastaMenuCardColorChange{
+  background-color: #dff9fb!important;
+}
 @media(max-width:768px){
     .putMarginTopOnTabs{
         margin-top: 30px !important;
